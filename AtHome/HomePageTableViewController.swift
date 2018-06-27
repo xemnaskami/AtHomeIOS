@@ -17,6 +17,11 @@ class HomePageTableViewController: UITableViewController {
     "Kilometer"
     ]
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "AtHome"
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
