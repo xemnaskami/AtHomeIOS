@@ -49,11 +49,12 @@ class HomePageTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath) as! HomePageTableViewCellController
         
-        cell.textLabel?.text = modules[indexPath.section].modules[indexPath.row].type
-        
-        
+        cell.module = modules[indexPath.section].modules[indexPath.row]
+        cell.textLabel?.text = cell.module.location
+        cell.detailTextLabel?.text = cell.module.type
+        print(cell)
         return cell
     }
     
@@ -87,6 +88,16 @@ class HomePageTableViewController: UITableViewController {
     private func reloadHomePageTableView() {
         self.HomePageTableView.reloadData()
         self.refreshControl?.endRefreshing()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is ModulePageViewController {
+            if sender is HomePageTableViewCellController {
+                let cell : HomePageTableViewCellController = sender as! HomePageTableViewCellController
+                let vc = segue.destination as? ModulePageViewController
+                vc?.module = cell.module
+            }
+        }
     }
     
 }
