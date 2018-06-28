@@ -24,6 +24,10 @@
 		23CCD35E20E5190400B43456 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 23CCD35D20E5190400B43456 /* schema.json */; };
 		23CCD36020E521A300B43456 /* Mok.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CCD35F20E521A300B43456 /* Mok.swift */; };
 		23CCD36220E533CF00B43456 /* Modules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CCD36120E533CF00B43456 /* Modules.swift */; };
+		23F4AE4320E5632B00B2EE3B /* Apollo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2311357520E5472100BFFB3A /* Apollo.framework */; };
+		23F4AE4520E5634500B2EE3B /* Carthage in Resources */ = {isa = PBXBuildFile; fileRef = 23F4AE4420E5634400B2EE3B /* Carthage */; };
+		23F4AE4720E5636500B2EE3B /* FontAwesome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F4AE4620E5636500B2EE3B /* FontAwesome.framework */; };
+		23F4AE4C20E5677F00B2EE3B /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F4AE4B20E5677F00B2EE3B /* Icons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +140,9 @@
 		23CCD35D20E5190400B43456 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		23CCD35F20E521A300B43456 /* Mok.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mok.swift; sourceTree = "<group>"; };
 		23CCD36120E533CF00B43456 /* Modules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modules.swift; sourceTree = "<group>"; };
+		23F4AE4420E5634400B2EE3B /* Carthage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Carthage; sourceTree = "<group>"; };
+		23F4AE4620E5636500B2EE3B /* FontAwesome.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesome.framework; path = Carthage/Build/iOS/FontAwesome.framework; sourceTree = "<group>"; };
+		23F4AE4B20E5677F00B2EE3B /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +150,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23F4AE4320E5632B00B2EE3B /* Apollo.framework in Frameworks */,
+				23F4AE4720E5636500B2EE3B /* FontAwesome.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,11 +198,13 @@
 		238B312420B6F36B008EFBC4 = {
 			isa = PBXGroup;
 			children = (
+				23F4AE4420E5634400B2EE3B /* Carthage */,
 				238B312F20B6F36B008EFBC4 /* AtHome */,
 				238B314720B6F36D008EFBC4 /* AtHomeTests */,
 				238B315220B6F36D008EFBC4 /* AtHomeUITests */,
 				238B312E20B6F36B008EFBC4 /* Products */,
 				239FC37F20E503E10049A444 /* Framework */,
+				23F4AE3A20E5632B00B2EE3B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -210,6 +221,7 @@
 		238B312F20B6F36B008EFBC4 /* AtHome */ = {
 			isa = PBXGroup;
 			children = (
+				23F4AE4A20E5677100B2EE3B /* Icons */,
 				2311353E20E5446400BFFB3A /* ModulePage */,
 				23CCD36420E5342300B43456 /* Module */,
 				23CCD36320E533DC00B43456 /* HomePage */,
@@ -288,6 +300,22 @@
 			path = Module;
 			sourceTree = "<group>";
 		};
+		23F4AE3A20E5632B00B2EE3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23F4AE4620E5636500B2EE3B /* FontAwesome.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		23F4AE4A20E5677100B2EE3B /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				23F4AE4B20E5677F00B2EE3B /* Icons.swift */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -299,6 +327,7 @@
 				238B312A20B6F36B008EFBC4 /* Frameworks */,
 				238B312B20B6F36B008EFBC4 /* Resources */,
 				239FC38B20E504B20049A444 /* CopyFiles */,
+				23F4AE4920E5644D00B2EE3B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -466,6 +495,7 @@
 				23CCD35A20E5121300B43456 /* AllModules.graphql in Resources */,
 				238B313B20B6F36D008EFBC4 /* Assets.xcassets in Resources */,
 				238B313620B6F36B008EFBC4 /* Main.storyboard in Resources */,
+				23F4AE4520E5634500B2EE3B /* Carthage in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +515,24 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23F4AE4920E5644D00B2EE3B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/IOS/FontAwesome.framework",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/FontAwesome.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		238B312920B6F36B008EFBC4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -495,6 +543,7 @@
 				238B313320B6F36B008EFBC4 /* ViewController.swift in Sources */,
 				23CCD35520E5115500B43456 /* ApolloController.swift in Sources */,
 				23CCD36020E521A300B43456 /* Mok.swift in Sources */,
+				23F4AE4C20E5677F00B2EE3B /* Icons.swift in Sources */,
 				2340206420E54AEF00D8355D /* HomePageTableViewCellController.swift in Sources */,
 				2311354720E5447F00BFFB3A /* ModulePageViewController.swift in Sources */,
 				23CCD36220E533CF00B43456 /* Modules.swift in Sources */,
@@ -674,6 +723,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J5LY4228LX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AtHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -692,6 +745,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J5LY4228LX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AtHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

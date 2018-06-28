@@ -51,21 +51,17 @@ class HomePageTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath) as! HomePageTableViewCellController
         
-        cell.module = modules[indexPath.section].modules[indexPath.row]
-        cell.textLabel?.text = cell.module.location
-        cell.detailTextLabel?.text = cell.module.type
+        cell.setModule(module: modules[indexPath.section].modules[indexPath.row])
+        //cell.module = modules[indexPath.section].modules[indexPath.row]
+        cell.textLabel?.text = cell.getModule().location
+        cell.detailTextLabel?.text = cell.getModule().type
+        let icon = getDictIconHomePage(moduleType: cell.getModule().type)
+        cell.imageView?.image = UIImage.fontAwesomeIcon(name: icon.icon, textColor: icon.color, size: CGSize(width: 50, height: 50))
         print(cell)
         return cell
     }
     
     @IBOutlet var HomePageTableView: UITableView!
-    
-    @IBAction func ReloadButton(_ sender: Any) {
-        print("Reload Button")
-        
-        getModules()
-    }
-    
     
     
     //MARK: Private Methods
@@ -77,7 +73,7 @@ class HomePageTableViewController: UITableViewController {
         let apolloController = ApolloController()
         apolloController.getAllModules(){ (modules) -> () in
             print(modules)
-            self.modules.append(ModulesSection(state: "Modules", modules: modules))
+            self.modules = [ModulesSection(state: "Modules", modules: modules)]
             self.reloadHomePageTableView()
         }
     }
@@ -95,7 +91,7 @@ class HomePageTableViewController: UITableViewController {
             if sender is HomePageTableViewCellController {
                 let cell : HomePageTableViewCellController = sender as! HomePageTableViewCellController
                 let vc = segue.destination as? ModulePageViewController
-                vc?.module = cell.module
+                vc?.module = cell.getModule()
             }
         }
     }

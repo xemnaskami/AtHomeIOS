@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ModulePageViewController : UIViewController {
     
     @IBOutlet var labelType: UILabel!
@@ -21,5 +22,7 @@ class ModulePageViewController : UIViewController {
         self.labelType.text = module.type
         self.labelLocation.text = module.location
         print(module)
+        //self.labelTest.font = UIFont.fontAwesome(ofSize: 100)
+        //self.labelTest.text = String.fontAwesomeIcon(name: .github)
     }
 }
