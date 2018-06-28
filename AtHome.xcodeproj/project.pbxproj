@@ -16,6 +16,13 @@
 		238B314920B6F36D008EFBC4 /* AtHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B314820B6F36D008EFBC4 /* AtHomeTests.swift */; };
 		238B315420B6F36D008EFBC4 /* AtHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B315320B6F36D008EFBC4 /* AtHomeUITests.swift */; };
 		239FC37C20E3C53A0049A444 /* HomePageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC37B20E3C53A0049A444 /* HomePageTableViewController.swift */; };
+		23CCD35220E5111C00B43456 /* Apollo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 239FC39920E50E690049A444 /* Apollo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23CCD35520E5115500B43456 /* ApolloController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CCD35420E5115500B43456 /* ApolloController.swift */; };
+		23CCD35A20E5121300B43456 /* AllModules.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 23CCD35920E5121300B43456 /* AllModules.graphql */; };
+		23CCD35C20E5174700B43456 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CCD35B20E5174700B43456 /* API.swift */; };
+		23CCD35E20E5190400B43456 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 23CCD35D20E5190400B43456 /* schema.json */; };
+		23CCD36020E521A300B43456 /* Mok.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CCD35F20E521A300B43456 /* Mok.swift */; };
+		23CCD36220E533CF00B43456 /* Modules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CCD36120E533CF00B43456 /* Modules.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +40,83 @@
 			remoteGlobalIDString = 238B312C20B6F36B008EFBC4;
 			remoteInfo = AtHome;
 		};
+		239FC39820E50E690049A444 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 239FC38D20E50E680049A444 /* Apollo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FC750441D2A532C00458D91;
+			remoteInfo = Apollo;
+		};
+		239FC39A20E50E690049A444 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 239FC38D20E50E680049A444 /* Apollo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FC7504E1D2A532D00458D91;
+			remoteInfo = ApolloTests;
+		};
+		239FC39C20E50E690049A444 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 239FC38D20E50E680049A444 /* Apollo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FA6ABBC1EC0A988000017BE;
+			remoteInfo = ApolloCacheDependentTests;
+		};
+		239FC39E20E50E690049A444 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 239FC38D20E50E680049A444 /* Apollo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FC631331E6AE2080062707E;
+			remoteInfo = ApolloPerformanceTests;
+		};
+		239FC3A020E50E690049A444 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 239FC38D20E50E680049A444 /* Apollo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FCE2CFA1E6C213D00E34457;
+			remoteInfo = StarWarsAPI;
+		};
+		239FC3A220E50E690049A444 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 239FC38D20E50E680049A444 /* Apollo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FACA9C61F42E67200AE2DBD;
+			remoteInfo = GitHubAPI;
+		};
+		239FC3A420E50E690049A444 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 239FC38D20E50E680049A444 /* Apollo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FD637E11E6ACF88001EDBC8;
+			remoteInfo = "TestHost iOS";
+		};
+		239FC3A620E50E690049A444 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 239FC38D20E50E680049A444 /* Apollo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9F8A95781EC0FC1200304A2D;
+			remoteInfo = ApolloTestSupport;
+		};
+		23CCD34820E5111000B43456 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 239FC38D20E50E680049A444 /* Apollo.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FC750431D2A532C00458D91;
+			remoteInfo = Apollo;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		239FC38B20E504B20049A444 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				23CCD35220E5111C00B43456 /* Apollo.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		238B312D20B6F36B008EFBC4 /* AtHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +134,13 @@
 		238B315320B6F36D008EFBC4 /* AtHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtHomeUITests.swift; sourceTree = "<group>"; };
 		238B315520B6F36D008EFBC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		239FC37B20E3C53A0049A444 /* HomePageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTableViewController.swift; sourceTree = "<group>"; };
+		239FC38D20E50E680049A444 /* Apollo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Apollo.xcodeproj; path = "../../../../Downloads/apollo-ios-master/Apollo.xcodeproj"; sourceTree = "<group>"; };
+		23CCD35420E5115500B43456 /* ApolloController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloController.swift; sourceTree = "<group>"; };
+		23CCD35920E5121300B43456 /* AllModules.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = AllModules.graphql; sourceTree = "<group>"; };
+		23CCD35B20E5174700B43456 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		23CCD35D20E5190400B43456 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		23CCD35F20E521A300B43456 /* Mok.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mok.swift; sourceTree = "<group>"; };
+		23CCD36120E533CF00B43456 /* Modules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modules.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +175,7 @@
 				238B314720B6F36D008EFBC4 /* AtHomeTests */,
 				238B315220B6F36D008EFBC4 /* AtHomeUITests */,
 				238B312E20B6F36B008EFBC4 /* Products */,
+				239FC37F20E503E10049A444 /* Framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +192,12 @@
 		238B312F20B6F36B008EFBC4 /* AtHome */ = {
 			isa = PBXGroup;
 			children = (
+				23CCD36420E5342300B43456 /* Module */,
+				23CCD36320E533DC00B43456 /* HomePage */,
+				23CCD35320E5112B00B43456 /* Apollo */,
 				238B313020B6F36B008EFBC4 /* AppDelegate.swift */,
 				238B313220B6F36B008EFBC4 /* ViewController.swift */,
 				238B313420B6F36B008EFBC4 /* Main.storyboard */,
-				239FC37B20E3C53A0049A444 /* HomePageTableViewController.swift */,
 				238B313A20B6F36D008EFBC4 /* Assets.xcassets */,
 				238B313C20B6F36D008EFBC4 /* LaunchScreen.storyboard */,
 				238B313F20B6F36D008EFBC4 /* Info.plist */,
@@ -131,6 +224,65 @@
 			path = AtHomeUITests;
 			sourceTree = "<group>";
 		};
+		239FC37F20E503E10049A444 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				239FC38D20E50E680049A444 /* Apollo.xcodeproj */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		239FC38E20E50E680049A444 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				239FC39920E50E690049A444 /* Apollo.framework */,
+				239FC39B20E50E690049A444 /* ApolloTests.xctest */,
+				239FC39D20E50E690049A444 /* ApolloCacheDependentTests.xctest */,
+				239FC39F20E50E690049A444 /* ApolloPerformanceTests.xctest */,
+				239FC3A120E50E690049A444 /* StarWarsAPI.framework */,
+				239FC3A320E50E690049A444 /* GitHubAPI.framework */,
+				239FC3A520E50E690049A444 /* TestHost iOS.app */,
+				239FC3A720E50E690049A444 /* ApolloTestSupport.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23CCD35320E5112B00B43456 /* Apollo */ = {
+			isa = PBXGroup;
+			children = (
+				23CCD35D20E5190400B43456 /* schema.json */,
+				23CCD35B20E5174700B43456 /* API.swift */,
+				23CCD35920E5121300B43456 /* AllModules.graphql */,
+				23CCD35620E511E200B43456 /* GraphqlQueries */,
+				23CCD35420E5115500B43456 /* ApolloController.swift */,
+				23CCD35F20E521A300B43456 /* Mok.swift */,
+			);
+			path = Apollo;
+			sourceTree = "<group>";
+		};
+		23CCD35620E511E200B43456 /* GraphqlQueries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GraphqlQueries;
+			sourceTree = "<group>";
+		};
+		23CCD36320E533DC00B43456 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				239FC37B20E3C53A0049A444 /* HomePageTableViewController.swift */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		23CCD36420E5342300B43456 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				23CCD36120E533CF00B43456 /* Modules.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,10 +293,12 @@
 				238B312920B6F36B008EFBC4 /* Sources */,
 				238B312A20B6F36B008EFBC4 /* Frameworks */,
 				238B312B20B6F36B008EFBC4 /* Resources */,
+				239FC38B20E504B20049A444 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				23CCD34920E5111000B43456 /* PBXTargetDependency */,
 			);
 			name = AtHome;
 			productName = AtHome;
@@ -193,6 +347,9 @@
 		238B312520B6F36B008EFBC4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = pyre;
@@ -221,6 +378,12 @@
 			mainGroup = 238B312420B6F36B008EFBC4;
 			productRefGroup = 238B312E20B6F36B008EFBC4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 239FC38E20E50E680049A444 /* Products */;
+					ProjectRef = 239FC38D20E50E680049A444 /* Apollo.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				238B312C20B6F36B008EFBC4 /* AtHome */,
@@ -230,12 +393,73 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		239FC39920E50E690049A444 /* Apollo.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Apollo.framework;
+			remoteRef = 239FC39820E50E690049A444 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		239FC39B20E50E690049A444 /* ApolloTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ApolloTests.xctest;
+			remoteRef = 239FC39A20E50E690049A444 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		239FC39D20E50E690049A444 /* ApolloCacheDependentTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ApolloCacheDependentTests.xctest;
+			remoteRef = 239FC39C20E50E690049A444 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		239FC39F20E50E690049A444 /* ApolloPerformanceTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ApolloPerformanceTests.xctest;
+			remoteRef = 239FC39E20E50E690049A444 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		239FC3A120E50E690049A444 /* StarWarsAPI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = StarWarsAPI.framework;
+			remoteRef = 239FC3A020E50E690049A444 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		239FC3A320E50E690049A444 /* GitHubAPI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GitHubAPI.framework;
+			remoteRef = 239FC3A220E50E690049A444 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		239FC3A520E50E690049A444 /* TestHost iOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "TestHost iOS.app";
+			remoteRef = 239FC3A420E50E690049A444 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		239FC3A720E50E690049A444 /* ApolloTestSupport.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ApolloTestSupport.framework;
+			remoteRef = 239FC3A620E50E690049A444 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		238B312B20B6F36B008EFBC4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				238B313E20B6F36D008EFBC4 /* LaunchScreen.storyboard in Resources */,
+				23CCD35E20E5190400B43456 /* schema.json in Resources */,
+				23CCD35A20E5121300B43456 /* AllModules.graphql in Resources */,
 				238B313B20B6F36D008EFBC4 /* Assets.xcassets in Resources */,
 				238B313620B6F36B008EFBC4 /* Main.storyboard in Resources */,
 			);
@@ -265,6 +489,10 @@
 				239FC37C20E3C53A0049A444 /* HomePageTableViewController.swift in Sources */,
 				238B313920B6F36B008EFBC4 /* AtHome.xcdatamodeld in Sources */,
 				238B313320B6F36B008EFBC4 /* ViewController.swift in Sources */,
+				23CCD35520E5115500B43456 /* ApolloController.swift in Sources */,
+				23CCD36020E521A300B43456 /* Mok.swift in Sources */,
+				23CCD36220E533CF00B43456 /* Modules.swift in Sources */,
+				23CCD35C20E5174700B43456 /* API.swift in Sources */,
 				238B313120B6F36B008EFBC4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +525,11 @@
 			isa = PBXTargetDependency;
 			target = 238B312C20B6F36B008EFBC4 /* AtHome */;
 			targetProxy = 238B315020B6F36D008EFBC4 /* PBXContainerItemProxy */;
+		};
+		23CCD34920E5111000B43456 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Apollo;
+			targetProxy = 23CCD34820E5111000B43456 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
