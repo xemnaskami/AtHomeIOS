@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2311354720E5447F00BFFB3A /* ModulePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2311354620E5447F00BFFB3A /* ModulePageViewController.swift */; };
+		2340206420E54AEF00D8355D /* HomePageTableViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2340206320E54AEF00D8355D /* HomePageTableViewCellController.swift */; };
 		238B313120B6F36B008EFBC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B313020B6F36B008EFBC4 /* AppDelegate.swift */; };
 		238B313320B6F36B008EFBC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B313220B6F36B008EFBC4 /* ViewController.swift */; };
 		238B313620B6F36B008EFBC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238B313420B6F36B008EFBC4 /* Main.storyboard */; };
@@ -16,9 +18,75 @@
 		238B314920B6F36D008EFBC4 /* AtHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B314820B6F36D008EFBC4 /* AtHomeTests.swift */; };
 		238B315420B6F36D008EFBC4 /* AtHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B315320B6F36D008EFBC4 /* AtHomeUITests.swift */; };
 		239FC37C20E3C53A0049A444 /* HomePageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC37B20E3C53A0049A444 /* HomePageTableViewController.swift */; };
+		23CCD35520E5115500B43456 /* ApolloController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CCD35420E5115500B43456 /* ApolloController.swift */; };
+		23CCD35A20E5121300B43456 /* AllModules.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 23CCD35920E5121300B43456 /* AllModules.graphql */; };
+		23CCD35C20E5174700B43456 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CCD35B20E5174700B43456 /* API.swift */; };
+		23CCD35E20E5190400B43456 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 23CCD35D20E5190400B43456 /* schema.json */; };
+		23CCD36020E521A300B43456 /* Mok.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CCD35F20E521A300B43456 /* Mok.swift */; };
+		23CCD36220E533CF00B43456 /* Modules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CCD36120E533CF00B43456 /* Modules.swift */; };
+		23F4AE4320E5632B00B2EE3B /* Apollo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2311357520E5472100BFFB3A /* Apollo.framework */; };
+		23F4AE4520E5634500B2EE3B /* Carthage in Resources */ = {isa = PBXBuildFile; fileRef = 23F4AE4420E5634400B2EE3B /* Carthage */; };
+		23F4AE4720E5636500B2EE3B /* FontAwesome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F4AE4620E5636500B2EE3B /* FontAwesome.framework */; };
+		23F4AE4C20E5677F00B2EE3B /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F4AE4B20E5677F00B2EE3B /* Icons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2311357420E5472100BFFB3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2311356920E5472100BFFB3A /* Apollo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FC750441D2A532C00458D91;
+			remoteInfo = Apollo;
+		};
+		2311357620E5472100BFFB3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2311356920E5472100BFFB3A /* Apollo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FC7504E1D2A532D00458D91;
+			remoteInfo = ApolloTests;
+		};
+		2311357820E5472100BFFB3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2311356920E5472100BFFB3A /* Apollo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FA6ABBC1EC0A988000017BE;
+			remoteInfo = ApolloCacheDependentTests;
+		};
+		2311357A20E5472100BFFB3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2311356920E5472100BFFB3A /* Apollo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FC631331E6AE2080062707E;
+			remoteInfo = ApolloPerformanceTests;
+		};
+		2311357C20E5472100BFFB3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2311356920E5472100BFFB3A /* Apollo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FCE2CFA1E6C213D00E34457;
+			remoteInfo = StarWarsAPI;
+		};
+		2311357E20E5472100BFFB3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2311356920E5472100BFFB3A /* Apollo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FACA9C61F42E67200AE2DBD;
+			remoteInfo = GitHubAPI;
+		};
+		2311358020E5472100BFFB3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2311356920E5472100BFFB3A /* Apollo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FD637E11E6ACF88001EDBC8;
+			remoteInfo = "TestHost iOS";
+		};
+		2311358220E5472100BFFB3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2311356920E5472100BFFB3A /* Apollo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9F8A95781EC0FC1200304A2D;
+			remoteInfo = ApolloTestSupport;
+		};
 		238B314520B6F36D008EFBC4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 238B312520B6F36B008EFBC4 /* Project object */;
@@ -35,7 +103,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		239FC38B20E504B20049A444 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2311354620E5447F00BFFB3A /* ModulePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulePageViewController.swift; sourceTree = "<group>"; };
+		2311356920E5472100BFFB3A /* Apollo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Apollo.xcodeproj; path = "../../../../Downloads/apollo-ios-master/Apollo.xcodeproj"; sourceTree = "<group>"; };
+		2340206320E54AEF00D8355D /* HomePageTableViewCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTableViewCellController.swift; sourceTree = "<group>"; };
 		238B312D20B6F36B008EFBC4 /* AtHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		238B313020B6F36B008EFBC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		238B313220B6F36B008EFBC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +134,15 @@
 		238B315320B6F36D008EFBC4 /* AtHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtHomeUITests.swift; sourceTree = "<group>"; };
 		238B315520B6F36D008EFBC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		239FC37B20E3C53A0049A444 /* HomePageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTableViewController.swift; sourceTree = "<group>"; };
+		23CCD35420E5115500B43456 /* ApolloController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloController.swift; sourceTree = "<group>"; };
+		23CCD35920E5121300B43456 /* AllModules.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = AllModules.graphql; sourceTree = "<group>"; };
+		23CCD35B20E5174700B43456 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		23CCD35D20E5190400B43456 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		23CCD35F20E521A300B43456 /* Mok.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mok.swift; sourceTree = "<group>"; };
+		23CCD36120E533CF00B43456 /* Modules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modules.swift; sourceTree = "<group>"; };
+		23F4AE4420E5634400B2EE3B /* Carthage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Carthage; sourceTree = "<group>"; };
+		23F4AE4620E5636500B2EE3B /* FontAwesome.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesome.framework; path = Carthage/Build/iOS/FontAwesome.framework; sourceTree = "<group>"; };
+		23F4AE4B20E5677F00B2EE3B /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +150,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23F4AE4320E5632B00B2EE3B /* Apollo.framework in Frameworks */,
+				23F4AE4720E5636500B2EE3B /* FontAwesome.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +172,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2311353E20E5446400BFFB3A /* ModulePage */ = {
+			isa = PBXGroup;
+			children = (
+				2311354620E5447F00BFFB3A /* ModulePageViewController.swift */,
+			);
+			path = ModulePage;
+			sourceTree = "<group>";
+		};
+		2311356A20E5472100BFFB3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2311357520E5472100BFFB3A /* Apollo.framework */,
+				2311357720E5472100BFFB3A /* ApolloTests.xctest */,
+				2311357920E5472100BFFB3A /* ApolloCacheDependentTests.xctest */,
+				2311357B20E5472100BFFB3A /* ApolloPerformanceTests.xctest */,
+				2311357D20E5472100BFFB3A /* StarWarsAPI.framework */,
+				2311357F20E5472100BFFB3A /* GitHubAPI.framework */,
+				2311358120E5472100BFFB3A /* TestHost iOS.app */,
+				2311358320E5472100BFFB3A /* ApolloTestSupport.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		238B312420B6F36B008EFBC4 = {
 			isa = PBXGroup;
 			children = (
+				23F4AE4420E5634400B2EE3B /* Carthage */,
 				238B312F20B6F36B008EFBC4 /* AtHome */,
 				238B314720B6F36D008EFBC4 /* AtHomeTests */,
 				238B315220B6F36D008EFBC4 /* AtHomeUITests */,
 				238B312E20B6F36B008EFBC4 /* Products */,
+				239FC37F20E503E10049A444 /* Framework */,
+				23F4AE3A20E5632B00B2EE3B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +221,14 @@
 		238B312F20B6F36B008EFBC4 /* AtHome */ = {
 			isa = PBXGroup;
 			children = (
+				23F4AE4A20E5677100B2EE3B /* Icons */,
+				2311353E20E5446400BFFB3A /* ModulePage */,
+				23CCD36420E5342300B43456 /* Module */,
+				23CCD36320E533DC00B43456 /* HomePage */,
+				23CCD35320E5112B00B43456 /* Apollo */,
 				238B313020B6F36B008EFBC4 /* AppDelegate.swift */,
 				238B313220B6F36B008EFBC4 /* ViewController.swift */,
 				238B313420B6F36B008EFBC4 /* Main.storyboard */,
-				239FC37B20E3C53A0049A444 /* HomePageTableViewController.swift */,
 				238B313A20B6F36D008EFBC4 /* Assets.xcassets */,
 				238B313C20B6F36D008EFBC4 /* LaunchScreen.storyboard */,
 				238B313F20B6F36D008EFBC4 /* Info.plist */,
@@ -131,6 +255,67 @@
 			path = AtHomeUITests;
 			sourceTree = "<group>";
 		};
+		239FC37F20E503E10049A444 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				2311356920E5472100BFFB3A /* Apollo.xcodeproj */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		23CCD35320E5112B00B43456 /* Apollo */ = {
+			isa = PBXGroup;
+			children = (
+				23CCD35D20E5190400B43456 /* schema.json */,
+				23CCD35B20E5174700B43456 /* API.swift */,
+				23CCD35920E5121300B43456 /* AllModules.graphql */,
+				23CCD35620E511E200B43456 /* GraphqlQueries */,
+				23CCD35420E5115500B43456 /* ApolloController.swift */,
+				23CCD35F20E521A300B43456 /* Mok.swift */,
+			);
+			path = Apollo;
+			sourceTree = "<group>";
+		};
+		23CCD35620E511E200B43456 /* GraphqlQueries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GraphqlQueries;
+			sourceTree = "<group>";
+		};
+		23CCD36320E533DC00B43456 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				239FC37B20E3C53A0049A444 /* HomePageTableViewController.swift */,
+				2340206320E54AEF00D8355D /* HomePageTableViewCellController.swift */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		23CCD36420E5342300B43456 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				23CCD36120E533CF00B43456 /* Modules.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		23F4AE3A20E5632B00B2EE3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23F4AE4620E5636500B2EE3B /* FontAwesome.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		23F4AE4A20E5677100B2EE3B /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				23F4AE4B20E5677F00B2EE3B /* Icons.swift */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,6 +326,8 @@
 				238B312920B6F36B008EFBC4 /* Sources */,
 				238B312A20B6F36B008EFBC4 /* Frameworks */,
 				238B312B20B6F36B008EFBC4 /* Resources */,
+				239FC38B20E504B20049A444 /* CopyFiles */,
+				23F4AE4920E5644D00B2EE3B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -193,6 +380,9 @@
 		238B312520B6F36B008EFBC4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = pyre;
@@ -221,6 +411,12 @@
 			mainGroup = 238B312420B6F36B008EFBC4;
 			productRefGroup = 238B312E20B6F36B008EFBC4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2311356A20E5472100BFFB3A /* Products */;
+					ProjectRef = 2311356920E5472100BFFB3A /* Apollo.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				238B312C20B6F36B008EFBC4 /* AtHome */,
@@ -230,14 +426,76 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		2311357520E5472100BFFB3A /* Apollo.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Apollo.framework;
+			remoteRef = 2311357420E5472100BFFB3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2311357720E5472100BFFB3A /* ApolloTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ApolloTests.xctest;
+			remoteRef = 2311357620E5472100BFFB3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2311357920E5472100BFFB3A /* ApolloCacheDependentTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ApolloCacheDependentTests.xctest;
+			remoteRef = 2311357820E5472100BFFB3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2311357B20E5472100BFFB3A /* ApolloPerformanceTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ApolloPerformanceTests.xctest;
+			remoteRef = 2311357A20E5472100BFFB3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2311357D20E5472100BFFB3A /* StarWarsAPI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = StarWarsAPI.framework;
+			remoteRef = 2311357C20E5472100BFFB3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2311357F20E5472100BFFB3A /* GitHubAPI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GitHubAPI.framework;
+			remoteRef = 2311357E20E5472100BFFB3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2311358120E5472100BFFB3A /* TestHost iOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "TestHost iOS.app";
+			remoteRef = 2311358020E5472100BFFB3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2311358320E5472100BFFB3A /* ApolloTestSupport.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ApolloTestSupport.framework;
+			remoteRef = 2311358220E5472100BFFB3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		238B312B20B6F36B008EFBC4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				238B313E20B6F36D008EFBC4 /* LaunchScreen.storyboard in Resources */,
+				23CCD35E20E5190400B43456 /* schema.json in Resources */,
+				23CCD35A20E5121300B43456 /* AllModules.graphql in Resources */,
 				238B313B20B6F36D008EFBC4 /* Assets.xcassets in Resources */,
 				238B313620B6F36B008EFBC4 /* Main.storyboard in Resources */,
+				23F4AE4520E5634500B2EE3B /* Carthage in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +515,24 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23F4AE4920E5644D00B2EE3B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/IOS/FontAwesome.framework",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/FontAwesome.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		238B312920B6F36B008EFBC4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -265,6 +541,13 @@
 				239FC37C20E3C53A0049A444 /* HomePageTableViewController.swift in Sources */,
 				238B313920B6F36B008EFBC4 /* AtHome.xcdatamodeld in Sources */,
 				238B313320B6F36B008EFBC4 /* ViewController.swift in Sources */,
+				23CCD35520E5115500B43456 /* ApolloController.swift in Sources */,
+				23CCD36020E521A300B43456 /* Mok.swift in Sources */,
+				23F4AE4C20E5677F00B2EE3B /* Icons.swift in Sources */,
+				2340206420E54AEF00D8355D /* HomePageTableViewCellController.swift in Sources */,
+				2311354720E5447F00BFFB3A /* ModulePageViewController.swift in Sources */,
+				23CCD36220E533CF00B43456 /* Modules.swift in Sources */,
+				23CCD35C20E5174700B43456 /* API.swift in Sources */,
 				238B313120B6F36B008EFBC4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +723,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J5LY4228LX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AtHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -458,6 +745,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J5LY4228LX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AtHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -1,0 +1,8 @@
+query allModules {
+    allModules {
+        id,
+        name,
+        location,
+        type
+    }
+}
