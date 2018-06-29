@@ -12,12 +12,12 @@
 		238B313120B6F36B008EFBC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B313020B6F36B008EFBC4 /* AppDelegate.swift */; };
 		238B313320B6F36B008EFBC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B313220B6F36B008EFBC4 /* ViewController.swift */; };
 		238B313620B6F36B008EFBC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238B313420B6F36B008EFBC4 /* Main.storyboard */; };
-		238B313920B6F36B008EFBC4 /* AtHome.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 238B313720B6F36B008EFBC4 /* AtHome.xcdatamodeld */; };
 		238B313B20B6F36D008EFBC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 238B313A20B6F36D008EFBC4 /* Assets.xcassets */; };
 		238B313E20B6F36D008EFBC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238B313C20B6F36D008EFBC4 /* LaunchScreen.storyboard */; };
 		238B314920B6F36D008EFBC4 /* AtHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B314820B6F36D008EFBC4 /* AtHomeTests.swift */; };
 		238B315420B6F36D008EFBC4 /* AtHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B315320B6F36D008EFBC4 /* AtHomeUITests.swift */; };
 		239FC37C20E3C53A0049A444 /* HomePageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC37B20E3C53A0049A444 /* HomePageTableViewController.swift */; };
+		23B1991D20E65F62009B3B84 /* GetModuleById.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 23B1991C20E65F62009B3B84 /* GetModuleById.graphql */; };
 		23CCD35520E5115500B43456 /* ApolloController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CCD35420E5115500B43456 /* ApolloController.swift */; };
 		23CCD35A20E5121300B43456 /* AllModules.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 23CCD35920E5121300B43456 /* AllModules.graphql */; };
 		23CCD35C20E5174700B43456 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CCD35B20E5174700B43456 /* API.swift */; };
@@ -123,7 +123,6 @@
 		238B313020B6F36B008EFBC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		238B313220B6F36B008EFBC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		238B313520B6F36B008EFBC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		238B313820B6F36B008EFBC4 /* AtHome.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AtHome.xcdatamodel; sourceTree = "<group>"; };
 		238B313A20B6F36D008EFBC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		238B313D20B6F36D008EFBC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		238B313F20B6F36D008EFBC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -134,6 +133,7 @@
 		238B315320B6F36D008EFBC4 /* AtHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtHomeUITests.swift; sourceTree = "<group>"; };
 		238B315520B6F36D008EFBC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		239FC37B20E3C53A0049A444 /* HomePageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTableViewController.swift; sourceTree = "<group>"; };
+		23B1991C20E65F62009B3B84 /* GetModuleById.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GetModuleById.graphql; sourceTree = "<group>"; };
 		23CCD35420E5115500B43456 /* ApolloController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloController.swift; sourceTree = "<group>"; };
 		23CCD35920E5121300B43456 /* AllModules.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = AllModules.graphql; sourceTree = "<group>"; };
 		23CCD35B20E5174700B43456 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -232,7 +232,6 @@
 				238B313A20B6F36D008EFBC4 /* Assets.xcassets */,
 				238B313C20B6F36D008EFBC4 /* LaunchScreen.storyboard */,
 				238B313F20B6F36D008EFBC4 /* Info.plist */,
-				238B313720B6F36B008EFBC4 /* AtHome.xcdatamodeld */,
 			);
 			path = AtHome;
 			sourceTree = "<group>";
@@ -268,7 +267,6 @@
 			children = (
 				23CCD35D20E5190400B43456 /* schema.json */,
 				23CCD35B20E5174700B43456 /* API.swift */,
-				23CCD35920E5121300B43456 /* AllModules.graphql */,
 				23CCD35620E511E200B43456 /* GraphqlQueries */,
 				23CCD35420E5115500B43456 /* ApolloController.swift */,
 				23CCD35F20E521A300B43456 /* Mok.swift */,
@@ -279,6 +277,8 @@
 		23CCD35620E511E200B43456 /* GraphqlQueries */ = {
 			isa = PBXGroup;
 			children = (
+				23CCD35920E5121300B43456 /* AllModules.graphql */,
+				23B1991C20E65F62009B3B84 /* GetModuleById.graphql */,
 			);
 			path = GraphqlQueries;
 			sourceTree = "<group>";
@@ -493,6 +493,7 @@
 				238B313E20B6F36D008EFBC4 /* LaunchScreen.storyboard in Resources */,
 				23CCD35E20E5190400B43456 /* schema.json in Resources */,
 				23CCD35A20E5121300B43456 /* AllModules.graphql in Resources */,
+				23B1991D20E65F62009B3B84 /* GetModuleById.graphql in Resources */,
 				238B313B20B6F36D008EFBC4 /* Assets.xcassets in Resources */,
 				238B313620B6F36B008EFBC4 /* Main.storyboard in Resources */,
 				23F4AE4520E5634500B2EE3B /* Carthage in Resources */,
@@ -539,7 +540,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				239FC37C20E3C53A0049A444 /* HomePageTableViewController.swift in Sources */,
-				238B313920B6F36B008EFBC4 /* AtHome.xcdatamodeld in Sources */,
 				238B313320B6F36B008EFBC4 /* ViewController.swift in Sources */,
 				23CCD35520E5115500B43456 /* ApolloController.swift in Sources */,
 				23CCD36020E521A300B43456 /* Mok.swift in Sources */,
@@ -883,19 +883,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		238B313720B6F36B008EFBC4 /* AtHome.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				238B313820B6F36B008EFBC4 /* AtHome.xcdatamodel */,
-			);
-			currentVersion = 238B313820B6F36B008EFBC4 /* AtHome.xcdatamodel */;
-			path = AtHome.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 238B312520B6F36B008EFBC4 /* Project object */;
 }

@@ -43,7 +43,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="v8K-e3-nzj" kind="show" id="igD-9S-aj7"/>
+                                    <segue destination="v8K-e3-nzj" kind="show" id="5Va-nP-eun"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -87,46 +87,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVL-o3-6J7">
-                                <rect key="frame" x="16" y="267" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVL-o3-6J7">
+                                <rect key="frame" x="8" y="354" width="359" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEY-lP-wha">
+                                <rect key="frame" x="8" y="421" width="44" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Djf-He-7fg"/>
+                                    <constraint firstAttribute="width" constant="44" id="TVs-CT-Eia"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRt-0s-l1s">
-                                <rect key="frame" x="68" y="422" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Data"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39g-eX-c1V">
-                                <rect key="frame" x="225" y="422" width="94" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Configuration"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwr-Ts-epp">
-                                <rect key="frame" x="52" y="514" width="64" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Solutions"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IgG-bo-Quz">
-                                <rect key="frame" x="225" y="514" width="95" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="En savoir plus"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKK-87-Ssl">
-                                <rect key="frame" x="52" y="323" width="307" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKK-87-Ssl">
+                                <rect key="frame" x="60" y="432" width="70.5" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xN0-10-wZ1">
+                                <rect key="frame" x="8" y="144" width="359" height="180"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="150"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Module Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQ8-J3-fNO">
+                                <rect key="frame" x="132" y="492" width="111" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqm-BV-HuE">
+                                <rect key="frame" x="118" y="566" width="138" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="GetModuleByID test"/>
+                                <connections>
+                                    <action selector="GetModuleByIDTest:" destination="v8K-e3-nzj" eventType="touchUpInside" id="5dW-W2-nlY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yKK-87-Ssl" firstAttribute="top" secondItem="ZVL-o3-6J7" secondAttribute="bottom" constant="42" id="1Ra-BP-5Qs"/>
+                            <constraint firstItem="xN0-10-wZ1" firstAttribute="leading" secondItem="PpF-mj-XIz" secondAttribute="leading" constant="8" id="BaF-cc-KyO"/>
+                            <constraint firstItem="fEY-lP-wha" firstAttribute="leading" secondItem="PpF-mj-XIz" secondAttribute="leading" constant="8" id="DR0-vD-rae"/>
+                            <constraint firstItem="xN0-10-wZ1" firstAttribute="top" secondItem="PpF-mj-XIz" secondAttribute="top" constant="80" id="E2O-r1-T6U"/>
+                            <constraint firstItem="fEY-lP-wha" firstAttribute="top" secondItem="ZVL-o3-6J7" secondAttribute="bottom" constant="31" id="E9F-6J-NQz"/>
+                            <constraint firstItem="PpF-mj-XIz" firstAttribute="trailing" secondItem="xN0-10-wZ1" secondAttribute="trailing" constant="8" id="F7H-eI-wRA"/>
+                            <constraint firstItem="yKK-87-Ssl" firstAttribute="leading" secondItem="fEY-lP-wha" secondAttribute="trailing" constant="8" id="HEs-3d-0c1"/>
+                            <constraint firstItem="PpF-mj-XIz" firstAttribute="trailing" secondItem="ZVL-o3-6J7" secondAttribute="trailing" constant="8" id="Irx-5d-L6q"/>
+                            <constraint firstItem="ZVL-o3-6J7" firstAttribute="top" secondItem="xN0-10-wZ1" secondAttribute="bottom" constant="30" id="O8h-HU-N27"/>
+                            <constraint firstItem="fEY-lP-wha" firstAttribute="leading" secondItem="PpF-mj-XIz" secondAttribute="leading" constant="8" id="RaV-cW-XTZ"/>
+                            <constraint firstItem="yKK-87-Ssl" firstAttribute="top" secondItem="ZVL-o3-6J7" secondAttribute="bottom" constant="42" id="ec3-OW-S9D"/>
+                            <constraint firstItem="yKK-87-Ssl" firstAttribute="leading" secondItem="fEY-lP-wha" secondAttribute="trailing" constant="8" id="fjw-vx-0xV"/>
+                            <constraint firstItem="fEY-lP-wha" firstAttribute="top" secondItem="ZVL-o3-6J7" secondAttribute="bottom" constant="31" id="qF7-Zz-GmI"/>
+                            <constraint firstItem="ZVL-o3-6J7" firstAttribute="leading" secondItem="PpF-mj-XIz" secondAttribute="leading" constant="8" id="xNx-JJ-COE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PpF-mj-XIz"/>
                     </view>
                     <connections>
                         <outlet property="labelLocation" destination="yKK-87-Ssl" id="aiz-35-34p"/>
+                        <outlet property="labelLocationIcon" destination="fEY-lP-wha" id="ErW-to-zYX"/>
+                        <outlet property="labelModuleIcon" destination="xN0-10-wZ1" id="e68-ch-KKq"/>
                         <outlet property="labelType" destination="ZVL-o3-6J7" id="XA3-ex-Wfy"/>
                     </connections>
                 </viewController>

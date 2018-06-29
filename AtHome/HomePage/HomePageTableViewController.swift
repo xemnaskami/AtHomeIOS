@@ -55,9 +55,8 @@ class HomePageTableViewController: UITableViewController {
         //cell.module = modules[indexPath.section].modules[indexPath.row]
         cell.textLabel?.text = cell.getModule().location
         cell.detailTextLabel?.text = cell.getModule().type
-        let icon = getDictIconHomePage(moduleType: cell.getModule().type)
+        let icon = getDictIconModuleType(moduleType: cell.getModule().type)
         cell.imageView?.image = UIImage.fontAwesomeIcon(name: icon.icon, textColor: icon.color, size: CGSize(width: 50, height: 50))
-        print(cell)
         return cell
     }
     
@@ -72,7 +71,6 @@ class HomePageTableViewController: UITableViewController {
     private func getModules() {
         let apolloController = ApolloController()
         apolloController.getAllModules(){ (modules) -> () in
-            print(modules)
             self.modules = [ModulesSection(state: "Modules", modules: modules)]
             self.reloadHomePageTableView()
         }

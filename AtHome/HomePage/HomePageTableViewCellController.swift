@@ -10,7 +10,7 @@ import UIKit
 import FontAwesome
 
 class HomePageTableViewCellController : UITableViewCell {
-    private var module : Module = Module(id: -1, name: "", location: "", type: "")
+    private var module : Module = Module(id: -1, name: "", location: "", type: "", samples: nil)
     
     public func setModule(module: Module) {
         self.module = module

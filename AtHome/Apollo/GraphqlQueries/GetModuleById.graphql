@@ -1,0 +1,12 @@
+query getModuleById($id: String!){
+    getModuleById(id: $id){
+        id
+        name
+        type
+        location
+        samples {
+            date,
+            payload
+        }
+    }
+}
