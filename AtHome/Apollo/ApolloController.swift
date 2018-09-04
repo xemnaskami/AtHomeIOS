@@ -13,11 +13,13 @@ class ApolloController {
     
     //MARK: Apollo Client
     
+    //let apolloClient = ApolloClient(url: URL(string : "http://lferry.xyz:8080/graphql")!)
     let apolloClient = ApolloClient(url: URL(string : "https://woodbox.io:5000/graphql")!)
     
     //MARK: Public query methods
     
-    public func getAllModules(callbackFunction: @escaping ([Module])->() ){
+    public func apiGetAllModules(callbackFunction: @escaping ([Module])->() ){
+        
         apolloClient.fetch(query: AllModulesQuery()){
             (result, error) in
             
@@ -26,17 +28,20 @@ class ApolloController {
             var finalModules : [Module] = []
             let modules = result?.data?.allModules
             
-            for module in modules!{
-                if module != nil {
-                    let currentModule = Module(id: Int((module?.id)!)!, name: (module?.name)!, location: (module?.location)!, type: (module?.type)!, samples: nil)
-                    finalModules.append(currentModule)
+            if (modules != nil) {
+                for module in modules!{
+                    if module != nil {
+                        let currentModule = Module(id: Int((module?.id)!)!, name: (module?.name)!, location: (module?.location)!, type: (module?.type)!, samples: nil)
+                        finalModules.append(currentModule)
+                    }
                 }
+                
             }
             callbackFunction(finalModules)
         }
     }
     
-    public func getModuleById(moduleId : Int, callbackFunction: @escaping (Module?)->()) {
+    public func apiGetModuleById(moduleId : Int, callbackFunction: @escaping (Module?)->()) {
         apolloClient.fetch(query: GetModuleByIdQuery(id: String(moduleId))) {
             (result, error) in
             
@@ -51,17 +56,15 @@ class ApolloController {
                 finalModule = Module(id: Int((module?.id)!)!, name: (module?.name)!, location: (module?.location)!, type: (module?.type)!, samples: nil)
 
                 var samples : [Sample] = []
-
+                
                 if module?.samples != nil {
                     for sample in (module?.samples)! {
                         var payload = self.convertToDictionary(text: (sample?.payload)!)
-
-
+                        
                         samples.append(Sample(payload: Payload(unitMeasure: (payload?["unit_measure"])! as! String, name: (payload?["name"])! as! String, measure: (payload?["measure"])! as! String), date: (sample?.date)!))
                     }
                     finalModule.samples = samples
                 }
-                print("---------------------------")
                 callbackFunction(finalModule)
             }
         }

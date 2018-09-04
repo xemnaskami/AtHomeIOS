@@ -29,7 +29,7 @@ class HomePageTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "AtHome"
-        self.getModules()
+        self.getModulesFromApi()
     }
     
     
@@ -56,7 +56,8 @@ class HomePageTableViewController: UITableViewController {
         cell.textLabel?.text = cell.getModule().location
         cell.detailTextLabel?.text = cell.getModule().type
         let icon = getDictIconModuleType(moduleType: cell.getModule().type)
-        cell.imageView?.image = UIImage.fontAwesomeIcon(name: icon.icon, textColor: icon.color, size: CGSize(width: 50, height: 50))
+        print(icon)
+        cell.imageView?.image = UIImage.fontAwesomeIcon(name: icon.icon, style: .solid, textColor: icon.color, size: CGSize(width: 50, height: 50))
         return cell
     }
     
@@ -66,11 +67,11 @@ class HomePageTableViewController: UITableViewController {
     //MARK: Private Methods
     
     /*
-     * Get modules from API using ApolloController and store modules in modules var
+     * Get modules from API using ApolloController and store modules in a var named modules
      */
-    private func getModules() {
+    private func getModulesFromApi() {
         let apolloController = ApolloController()
-        apolloController.getAllModules(){ (modules) -> () in
+        apolloController.apiGetAllModules(){ (modules) -> () in
             self.modules = [ModulesSection(state: "Modules", modules: modules)]
             self.reloadHomePageTableView()
         }

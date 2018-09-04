@@ -22,6 +22,11 @@ struct Module {
     
 }
 
+struct Samples {
+    var unitMeasure : String
+    var samples : [Sample]
+}
+
 struct Sample {
     var payload : Payload
     var date : String

@@ -21,8 +21,9 @@ class ModulePageViewController : UIViewController {
     @IBAction func GetModuleByIDTest(_ sender: Any) {
         let apolloController = ApolloController()
         
-        apolloController.getModuleById(moduleId: self.module.id) { (module) -> () in
-            print(module ?? "No module founded")
+        apolloController.apiGetModuleById(moduleId: self.module.id) { (module) -> () in
+            print(module?.samples?.count ?? "No module founded")
+            print(module?.samples?.suffix(10) ?? "No samples founded")
         }
     }
     
@@ -35,13 +36,27 @@ class ModulePageViewController : UIViewController {
         self.labelLocation.text = module.location.capitalized
         
         let locationIcon = getLocationIcon()
-        self.labelLocationIcon.font = UIFont.fontAwesome(ofSize: 30)
+        self.labelLocationIcon.font = UIFont.fontAwesome(ofSize: 30, style: .solid)
         self.labelLocationIcon.text = String.fontAwesomeIcon(name: locationIcon.icon)
         self.labelLocationIcon.textColor = locationIcon.color
         
         let imageIcon = getDictIconModuleType(moduleType: self.module.type)
-        self.labelModuleIcon.font = UIFont.fontAwesome(ofSize: 150)
+        self.labelModuleIcon.font = UIFont.fontAwesome(ofSize: 150, style: .solid)
         self.labelModuleIcon.text = String.fontAwesomeIcon(name: imageIcon.icon)
         self.labelModuleIcon.textColor = imageIcon.color
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is ModuleParametersPageViewController {
+            print(self.module)
+            let vc = segue.destination as? ModuleParametersPageViewController
+            vc?.module = self.module
+        }
+    }
+    
+    public func getModule() -> Module {
+        return self.module
+    }
+
 }

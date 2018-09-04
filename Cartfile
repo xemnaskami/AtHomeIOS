@@ -1,1 +1,5 @@
 github "thii/FontAwesome.swift"
+github "apollographql/apollo-ios"
+github "xmartlabs/Eureka" ~> 4.0
+github "danielgindi/Charts" ~> 3.1.1
+github "realm/realm-cocoa"

@@ -17,7 +17,7 @@ public struct Icon {
 public func getLocationIcon() -> Icon {
     return Icon(
         color: UIColor(red: (160/255.0), green: (168/255.0), blue: (180/255.0), alpha: 1.0),
-        icon: .mapMarker
+        icon: FontAwesome.mapMarker
     )
 }
 
@@ -28,19 +28,19 @@ public func getDictIconModuleType(moduleType : String) -> Icon {
             icon: FontAwesome.tint),
         "luxmeter" : Icon(
             color: UIColor(red: (252/255.0), green: (196/255.0), blue: (96/255.0), alpha: 1.0),
-            icon: FontAwesome.lightbulbO),
+            icon: FontAwesome.lightbulb),
         "thermometer" : Icon(
             color: UIColor(red: (229/255.0), green: (77/255.0), blue: (94/255.0), alpha: 1.0),
-            icon: .thermometerHalf),
+            icon: FontAwesome.thermometerHalf),
         "athmospherics" : Icon(
             color: UIColor(red: (196/255.0), green: (202/255.0), blue: (211/255.0), alpha: 1.0),
-            icon: .cloud)
+            icon: FontAwesome.cloud)
     ]
     
     if dictIcon[moduleType] != nil {
         return dictIcon[moduleType]!
     }
-    return Icon(color: UIColor.black, icon: .question)
+    return Icon(color: UIColor.black, icon: FontAwesome.question)
 }
     
     

@@ -115,19 +115,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Module Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQ8-J3-fNO">
-                                <rect key="frame" x="132" y="492" width="111" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqm-BV-HuE">
-                                <rect key="frame" x="118" y="566" width="138" height="30"/>
+                                <rect key="frame" x="118" y="617" width="138" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="GetModuleByID test"/>
                                 <connections>
                                     <action selector="GetModuleByIDTest:" destination="v8K-e3-nzj" eventType="touchUpInside" id="5dW-W2-nlY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Svl-tg-eRb">
+                                <rect key="frame" x="148" y="516" width="79" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Paramètres"/>
+                                <connections>
+                                    <segue destination="hiH-QA-pE2" kind="show" id="kNQ-E4-g6m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPo-wq-0vz">
+                                <rect key="frame" x="164" y="564" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Charts"/>
+                                <connections>
+                                    <segue destination="br2-bY-GYW" kind="show" id="B61-I8-Y3P"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -160,6 +169,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EKt-OC-KQF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1596" y="32.833583208395808"/>
+        </scene>
+        <!--Module Parameters Page View Controller-->
+        <scene sceneID="ka9-Rq-cK3">
+            <objects>
+                <viewController id="hiH-QA-pE2" customClass="ModuleParametersPageViewController" customModule="AtHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZKv-Xf-F5w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PT5-eb-mqi">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PT5-eb-mqi" firstAttribute="leading" secondItem="EWZ-IK-6S2" secondAttribute="leading" id="JUc-HF-vYg"/>
+                            <constraint firstItem="PT5-eb-mqi" firstAttribute="trailing" secondItem="EWZ-IK-6S2" secondAttribute="trailing" id="e9V-B5-QiI"/>
+                            <constraint firstItem="PT5-eb-mqi" firstAttribute="top" secondItem="EWZ-IK-6S2" secondAttribute="top" id="l3b-7f-yNe"/>
+                            <constraint firstItem="PT5-eb-mqi" firstAttribute="bottom" secondItem="EWZ-IK-6S2" secondAttribute="bottom" id="t5e-NX-xji"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EWZ-IK-6S2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wsh-OM-C7b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2465" y="-354"/>
+        </scene>
+        <!--Module Charts Page Controller View Controller-->
+        <scene sceneID="csM-VO-KmX">
+            <objects>
+                <viewController id="br2-bY-GYW" customClass="ModuleChartsPageControllerViewController" customModule="AtHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ty0-cR-bBH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kP6-CI-9Rr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p32-ss-v0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2465" y="370"/>
         </scene>
     </scenes>
 </document>

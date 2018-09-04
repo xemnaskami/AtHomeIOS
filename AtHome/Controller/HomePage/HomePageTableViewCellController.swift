@@ -18,7 +18,7 @@ class HomePageTableViewCellController : UITableViewCell {
         //self.labelLocation.text = self.module.location
         //self.labelType.text = self.module.type
         //self.labelIcon.text = self.module.name
-        /*let icon = getDictIconHomePage(moduleType: self.module.type)
+        /*let icon = getDictIconModuleType(moduleType: self.module.type)
         self.labelIcon.font = UIFont.fontAwesome(ofSize: 20)
         self.labelIcon.text = String.fontAwesomeIcon(name: icon.icon)
         self.labelIcon.textColor = icon.color*/
